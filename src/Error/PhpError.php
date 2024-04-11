@@ -184,7 +184,7 @@ class PhpError
         $out = [];
         foreach ($this->trace as $frame) {
             if (!empty($frame['line'])) {
-                $out[] = "{$frame['reference']} {$frame['file']}, line {$frame['line']}";
+                $out[] = "{$frame['reference']} {$frame['file']} line {$frame['line']}";
             } else {
                 $out[] = $frame['reference'];
             }
